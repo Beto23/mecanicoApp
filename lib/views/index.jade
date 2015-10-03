@@ -6,12 +6,79 @@ html(lang="es")
 		link(rel="stylesheet", href="css/app.css")
 		link(href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css')
 body
+	//********Login *********************
+	div.Popup-login
+		section.Login
+			div.Login-usuario
+				figure.Login-usuario-img
+				form.Login-usuario-form
+					h2 Login
+					div
+						label Usuario
+						input(type="text")
+					div
+						label Password
+						input(type="password")
+					div.Contenedor-submit
+						button(type="submit") Entrar
+	//********Registro usuario y mecacino *********************
+	div.Popup
+		section.Registro
+			article.Registro-usuario
+				figure.Registro-usuario-img
+				form.Registro-usuario-form
+					h2 Registro de Usuario
+					div
+						label Usuario
+						input(type="text")
+					div
+						label Nombre
+						input(type="text")
+					div
+						label Correo
+						input(type="text")
+					div
+						label Password
+						input(type="password")
+					div
+						button(type="submit") Registrar
+			article.Registro-mecanico
+				figure.Registro-mecanico-img
+				form.Registro-mecanico-form
+					h2 Registro de Mecanico
+					div
+						label Nombre
+						input(type="text")
+					div
+						label Usuario
+						input(type="text")
+					div
+						label Especialidad
+						select
+							option(value="op1") opcion1
+							option(value="op2") opcion2
+							option(value="op3") opcion3
+					div
+						label Correo
+						input(type="text")
+					div
+						label Direccion
+						input(type="text")
+					div
+						label Telefeno
+						input(type="text")
+					div
+						label Contraseña
+						input(type="password")
+					div
+						button(type="submit") Registrar
+	//*********** Pagina principal *************
 	div.Contenedor
 		header.Header
 			h2.Header-title MecanicoApp
 			div.Header-btn
-				button.Header-btn-registrarse Sign up
-				button.Header-btn-login Login
+				button#btn-signup.Header-btn-registrarse Sign up
+				button#btn-login.Header-btn-login Login
 		section.section-swiper
 			//swiper
 			div.swiper-container.Banner
